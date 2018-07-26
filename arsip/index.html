@@ -20,7 +20,10 @@
 <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<![endif]-->
+	
+
+
 </head>
 <body id="page-top">
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -100,28 +103,27 @@
 					Submit success... Thank you!
 				</div>
 			</div>
+			<br>
+			<br>
 			<form method="post" action="contact.php" id="contactform" class="text-centre">
-				<div class="dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">jenis
-					<span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						  <li><a href="#">surat</a></li>
-						  <li><a href="#">email</a></li>			
-						  <li><a href="#">dokumen</a></li>
-						  <li><a href="#">buku</a></li>
-						  <li><a href="#">ka</a></li>
-					</ul>
+				<div class="form-group">
+					<select style=" height: 50%; width: 70%" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+							<option selected>pilih jenis surat...</option>
+							<option value="pendidikan">surat</option>
+  							<option value="kebudayaan">dokumen</option>
+ 							<option value="science">buku</option>
+							<option value="komunikasi">email</option>
+							<option value="komunikasi">ka</option>
+					</select>
 				</div>
-				<br>
-				<br>
 
 				<p>
 						masukan tanggal surat dibuat
 				</p>
+
 				<input tanggal="tanggal" type="text" class="col-md-4" placeholder="tanggal *">
 				<input bulan="bulan" type="text" class="col-md-4" placeholder="bulan *">
 				<input tahun="tahun" type="text" class="col-md-4" placeholder="tahun *">
-			
 				<input nosurat="nosurat" type="text" class="col-md-12" placeholder="nomor surat *">
 				<input assurat="assurat" type="text" class="col-md-12" placeholder="asal surat *">
 				<textarea name="comment" class="col-md-12" placeholder="perihal *"></textarea>
