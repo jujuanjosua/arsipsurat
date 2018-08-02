@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\controllers",
+    "\\app\\models",
+    "\\app\\views",
+    "\\app\\views\\devise",
+    "\\app\\views\\devise\\passwords",
+    "\\app\\views\\layouts",
+    "\\config"
+  ],
+  "SelectedNode": "\\app\\views\\devise\\passwords\\edit.html.erb",
+  "PreviewInSolutionExplorer": false
+}
