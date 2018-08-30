@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :surats
+  resources :surats do
+	resources :dispos
+  end
+
   get 'scanpage/scan'
   devise_for :models
   devise_for :users

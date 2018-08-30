@@ -2,14 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\controllers",
-    "\\app\\models",
+    "\\app\\assets\\config",
+    "\\app\\assets\\fonts",
+    "\\app\\assets\\images",
+    "\\app\\assets\\javascripts",
+    "\\app\\assets\\stylesheets",
+    "\\app\\channels",
     "\\app\\views",
-    "\\app\\views\\devise",
-    "\\app\\views\\devise\\passwords",
-    "\\app\\views\\layouts",
-    "\\config"
+    "\\app\\views\\surats"
   ],
-  "SelectedNode": "\\app\\views\\devise\\passwords\\edit.html.erb",
+  "SelectedNode": "\\app\\views\\surats\\_form.html.erb",
   "PreviewInSolutionExplorer": false
 }

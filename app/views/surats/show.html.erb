@@ -139,14 +139,17 @@
     </div>
 
     <div class="container">
-
+    <div id="surat-dispos">
       <h3>Disposisi :</h3>
+      <%= render @surat.dispos %>
+      <%= render 'dispos/form' %>
       <br>
         <%= link_to 'Edit', edit_surat_path(@surat), class: "contact submit btn btn-primary btn-xl" %>
         <%= link_to 'List', surats_path, class: "contact submit btn btn-primary btn-xl" %>
       
       <br>
       <br>
+        </div>
     </div>
 
    </div>

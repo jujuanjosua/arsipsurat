@@ -1,4 +1,6 @@
 class Surat < ApplicationRecord
+	belongs_to :user
+	has_many :dispos, dependent: :destroy
 
 	mount_uploader :image, ImageUploader
 
