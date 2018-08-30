@@ -1,10 +1,10 @@
 <%= simple_form_for([@surat, @surat.dispos.build], remote: true) do |f| %>
 	
-<div class = "field">
+<div class = "field", style="width:688px;">
 	<div class = "control">
-		<%= f.input :dispo, input_html: { class: 'textarea' }, wrapper: false, label_html: { class: 'label' } %>
+		<%= f.input :dispo, input_html: { class: 'textarea', style: 'width:1105px' }, label: "Disposisi" %>
 	</div>
 </div>
 
-<%= f.button :submit, 'Leave a dispo', class:'button is-info' %>
+<%= f.button :submit, 'Leave a dispo', class:'contact submit btn btn-primary btn-xl actions is-info' %>
 <% end %>

@@ -38,20 +38,9 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
-      <li>
-      <a class="page-scroll" href="#page-top">home</a>
-            </li>
-            <li>
-      <a class="page-scroll" href="#portfolio">notif</a>
-      </li>
-      <li>
-      <a class="page-scroll" href="#pricing">history</a>
-      </li>
-      <li>
 
-              <%= link_to 'Log out', destroy_user_session_path, :method => :delete %>
-
-            </li>
+      <li> <%= link_to 'New', new_surat_path %> </li>
+      <li> <%= link_to 'Log out', destroy_user_session_path, :method => :delete %> </li>
     </ul>
   </div>
   <!-- /.navbar-collapse -->
@@ -67,7 +56,7 @@
 <div class="container">
 <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
-            <h2 class="section-heading">NOTIF<b>ICATION</b> </h2>
+            <h2 class="section-heading">HI<b>STORY</b> </h2>
             <hr class="primary">
             <br>
             <br>
@@ -77,7 +66,7 @@
 
    <div class="panel panel-default">
     <% @surats.each do |surat| %>
-     <div class="panel-heading"><%= link_to 'View', surat, class: "pull-right" %><h4> 5 Juli 2018 </h4></div>
+     <div class="panel-heading"><%= link_to 'Details', surat, class: "pull-right" %><h4> <%= surat.created_at %> </h4></div>
       <div class="panel-body">
         <div class="clearfix"></div>
 
@@ -90,43 +79,13 @@
       </div>
    </div>
 
-   <div class="panel panel-default">
-     <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4> 5 Juli 2018 </h4></div>
-      <div class="panel-body">
-        <div class="clearfix"></div>
-        Technical Consultation Meeting on the Future if Education for Susutainable Development (ESD), 8 - 11 Juli 2018, Bangkok, Thailand
-      </div>
-   </div>
 
-   <div class="panel panel-default">
-  <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4> 5 Juli 2018 </h4></div>
-   <div class="panel-body">
-     <div class="clearfix"></div>
-     Technical Consultation Meeting on the Future if Education for Susutainable Development (ESD), 8 - 11 Juli 2018, Bangkok, Thailand
-   </div>
-  </div>
-
-  <div class="panel panel-default">
-  <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4> 5 Juli 2018 </h4></div>
-   <div class="panel-body">
-     <div class="clearfix"></div>
-     Technical Consultation Meeting on the Future if Education for Susutainable Development (ESD), 8 - 11 Juli 2018, Bangkok, Thailand
-   </div>
-  </div>
-
-  <div class="panel panel-default">
-  <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4> 5 Juli 2018 </h4></div>
-   <div class="panel-body">
-     <div class="clearfix"></div>
-     Technical Consultation Meeting on the Future if Education for Susutainable Development (ESD), 8 - 11 Juli 2018, Bangkok, Thailand
-   </div>
-  </div>
 </div>
 </section>
 
 <!-- Section Footer
 ================================================== -->
-<section class="bg-dark">
+<section class="bg-dark" style="position:fixed;bottom:0;width:100%">
 <div class="container">
 <div class="row">
   <div class="col-md-12 text-center">

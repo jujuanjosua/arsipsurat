@@ -38,20 +38,9 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
-      <li>
-      <a class="page-scroll" href="#page-top">home</a>
-            </li>
-            <li>
-      <a class="page-scroll" href="#portfolio">notif</a>
-      </li>
-      <li>
-      <a class="page-scroll" href="#pricing">history</a>
-      </li>
-      <li>
-
-              <%= link_to 'Log out', destroy_user_session_path, :method => :delete %>
-
-            </li>
+      <li> <%= link_to 'New', new_surat_path %> </li>
+      <li> <%= link_to 'History', surats_path %> </li>
+      <li> <%= link_to 'Log out', destroy_user_session_path, :method => :delete %> </li>
     </ul>
   </div>
   <!-- /.navbar-collapse -->
@@ -67,7 +56,7 @@
 <div class="container">
   <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
-            <h2 class="section-heading">VIEW<b>MORE</b> </h2>
+            <h2 class="section-heading">DE<b>TAILS</b> </h2>
             <hr class="primary">
             <br>
             <br>
@@ -141,15 +130,26 @@
     <div class="container">
     <div id="surat-dispos">
       <h3>Disposisi :</h3>
-      <%= render @surat.dispos %>
-      <%= render 'dispos/form' %>
+      
+      <%= render @surat.dispos %></div>
+
+      <div>
+      
+      <% if user_signed_in ="first@admin.com" %>
+         <%= render 'dispos/form' %>
+      <% else %>
+      <p>
+        To make a dispo you need to login as <%= link_to 'pimpinan', new_user_session_path %>. 
+      </p>
+      <% end %>  
+      </div>
       <br>
         <%= link_to 'Edit', edit_surat_path(@surat), class: "contact submit btn btn-primary btn-xl" %>
         <%= link_to 'List', surats_path, class: "contact submit btn btn-primary btn-xl" %>
       
       <br>
       <br>
-        </div>
+        
     </div>
 
    </div>
@@ -162,7 +162,7 @@
 
 <!-- Section Footer
 ================================================== -->
-<section class="bg-dark">
+<section class="bg-dark" style="width:100%;">
 <div class="container">
 <div class="row">
   <div class="col-md-12 text-center">

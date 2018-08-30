@@ -4,7 +4,7 @@
     <div class="media-content">
       <div class="content">
         <p>
-          <strong><%= dispo.user %></strong> <small><%= time_ago_in_words(dispo.created_at) %></small>
+          <strong><%= dispo.user.email %></strong> <small><%= time_ago_in_words(dispo.created_at) %></small>
           <br/>
           <%= dispo.dispo %>
         </p>

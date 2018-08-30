@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'redcarpet', '~> 3.4'
 gem 'devise', '~> 4.2'
 gem 'redcarpet', '~> 3.4'
 gem 'activeadmin', '~> 1.3'
