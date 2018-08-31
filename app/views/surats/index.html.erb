@@ -63,22 +63,19 @@
         </div>
     </div>
 
-
-   <div class="panel panel-default">
     <% @surats.each do |surat| %>
-     <div class="panel-heading"><%= link_to 'Details', surat, class: "pull-right" %><h4> <%= surat.created_at %> </h4></div>
-      <div class="panel-body">
-        <div class="clearfix"></div>
-
-        
-      <tr>
-        <td><%= surat.perihal_surat %></td>
-      </tr>
-    <% end %>
+      <div class="panel panel-default">
+          <div class="panel-heading"><%= link_to 'Details', surat, class: "pull-right" %><h4> <%= surat.created_at %> </h4></div>
+               <div class="panel-body">
+                  <div class="clearfix"></div>
+                        <tr>
+                          <td><%= surat.perihal_surat %></td>
+                        </tr>
+    
 
       </div>
    </div>
-
+<% end %>
 
 </div>
 </section>
