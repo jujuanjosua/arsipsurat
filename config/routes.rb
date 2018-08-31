@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 	resources :dispos
   end
 
+  resources :notifications
+
   get 'scanpage/scan'
   devise_for :models
   devise_for :users

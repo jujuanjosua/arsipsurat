@@ -9,9 +9,15 @@ class DisposController < ApplicationController
 
 		respond_to do |format|
 			if @dispo.save
+
+			#create notification
+		((@surat.users.uniq + [@surat.user]) - [current_user]).each do |user|
+			Notification.create(recipient: user, actor: current_user, action: "posted", notifiable: @dispo)
+		end
+
 				format.html { redirect_to surat_path(@surat) }
 				format.js
-			else
+		else
 			format.html { redirect_to surat_path(@surat), notice: 'Disposisi not saved'}
 			format.js
 			end

@@ -2,11 +2,6 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\assets\\config",
-    "\\app\\assets\\fonts",
-    "\\app\\assets\\images",
-    "\\app\\assets\\javascripts",
-    "\\app\\assets\\stylesheets",
     "\\app\\channels",
     "\\app\\views",
     "\\app\\views\\surats"

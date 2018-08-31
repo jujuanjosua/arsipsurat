@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
 	has_many :surats
+	has_many :dispos
+	has_many :notifications, foreign_key: :recipient_id
 	
 		
 end
