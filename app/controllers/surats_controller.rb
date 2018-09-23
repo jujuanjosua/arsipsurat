@@ -18,7 +18,7 @@ class SuratsController < InheritedResources::Base
   private
 
     def surat_params
-      params.require(:surat).permit(:jenis_surat, :tanggal_diterima, :bulan_diterima, :tahun_diterima, :tanggal_dibuat, :bulan_dibuat, :tahun_dibuat, :nomor_surat, :asal_surat, :perihal_surat, :bidang, :image)
+      params.require(:surat).permit(:jenis_surat, :tanggal_diterima, :bulan_diterima, :tahun_diterima, :tanggal_dibuat, :bulan_dibuat, :tahun_dibuat, :nomor_surat, :asal_surat, :perihal_surat, :bidang, :status, :image)
     end
 end
 

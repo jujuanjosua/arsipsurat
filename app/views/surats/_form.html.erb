@@ -193,7 +193,8 @@
     <% end %>
   </div>
   <br>
-
+  
+  <%= f.select(:status, options_for_select([['diterima','diterima'],['disposisi','disposisi'], ['selesai','selesai']]), { include_blank: true }, class: "col-md-12") %>
   <div>
     <%= f.submit "Upload" , class: "contact submit btn btn-primary btn-xl actions" %>
   </div>
