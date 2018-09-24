@@ -204,7 +204,7 @@
           <div class="bs-wizard-info text-center">Selesai</div>
         </div>
     </div>
-    <% elsif(@surat.dispos == "selesai") %>
+    <% elsif(@surat.dispos == "ditindaklanjuti") %>
     <div class="container">
   
       
@@ -213,8 +213,7 @@
         <div class="col-xs-3 bs-wizard-step complete">
           <div class="text-center bs-wizard-stepnum">Step 1</div>
           <div class="progress"><div class="progress-bar"></div></div>
-          <a href="#" class="bs-wizard-dot"></a>
-          
+          <a href="#" class="bs-wizard-dot"></a>          
           <div class="bs-wizard-info text-center">Diterima</div>
           <endif>
         </div>
@@ -223,7 +222,6 @@
           <div class="text-center bs-wizard-stepnum">Step 2</div>
           <div class="progress"><div class="progress-bar"></div></div>
           <a href="#" class="bs-wizard-dot"></a>
-         
           <div class="bs-wizard-info text-center">Disposisi</div>
           <endif>
         </div>
@@ -233,6 +231,7 @@
           <div class="progress"><div class="progress-bar"></div></div>
           <a href="#" class="bs-wizard-dot"></a>
           <div class="bs-wizard-info text-center">Ditindaklanjuti</div>
+          <endif>
         </div>
         
         <div class="col-xs-3 bs-wizard-step complete"><!-- active -->
